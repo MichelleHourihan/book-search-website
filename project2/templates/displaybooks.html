@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+   <b>Book Reviews</b>
+{% endblock %}
+
+{% block body %}
+<div class="bg-image">
+<h2>Books</h2>
+<div class= "bookdisplay">
+	<ul style="background-color:#595959; margin-right:5%">
+      {% for book in book %}
+          <li>
+              <a href="{{ url_for('bookreview', book_isbn=book.isbn) }}">
+                 ISBN: {{ book.isbn }} ,TITLE: {{ book.title }}, AUTHOR:{{book.author}},YEAR: {{book.year}}
+              </a>
+          </li>
+      {% endfor %}
+  </ul>
+  
+</div>
+</div>
+
+{% endblock %}

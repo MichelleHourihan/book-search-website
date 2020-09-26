@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+   <b>Book Reviews</b>
+{% endblock %}
+
+{% block body %}
+
+<h2>{{book.isbn}}, {{book.title}}, {{book.author}}, {{book.year}}<br> Average Rating : {{average2}}<br> Number of rating: {{number2}}</h2>
+
+
+{% endblock %}

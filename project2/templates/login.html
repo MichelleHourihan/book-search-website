@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+   <b>Book Reviews</b>
+{% endblock %}
+
+{% block body %}
+<div class="bg-image">
+
+    <h1>Login</h1>
+  
+    <hr>
+	
+
+	<div class="container d-flex justify-content-center">
+	
+	<div class="card bg-secondary">
+		<div class="card-body">
+			<div class="row">
+				<form action ="{{ url_for('welcomeback') }}" method="post">
+					<div class="form-row w-450">
+						<div class="col-sm-12">
+							<input style="width:400px" type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+						</div>
+					</div>
+					<div class="form-row " >
+						<div class="col-sm-12">
+							<input style="width:400px" type="password" class="form-control" placeholder="Enter password" name="pswd">
+						</div>
+					</div>
+					
+     
+					<div class="button-container d-flex justify-content-center">
+						<button type="submit" class="btn btn-primary btn-large mt-3" >Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+	
+	{% endblock %}

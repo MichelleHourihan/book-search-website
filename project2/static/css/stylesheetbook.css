@@ -1,0 +1,70 @@
+div.title {
+  color:  #595959;
+  font-family: helvetica;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+background-color: #53c68c;
+  }
+  
+ div.main-container {
+  text-align: center;
+  color: 
+}
+
+div.form-row{
+
+	margin-bottom: 30px;
+	
+	
+}
+form {
+  text-align: center;
+}
+#login{margin-top:20px;
+
+
+}
+h4 span{
+	background-color: #595959;
+	border-radius: 15px;
+	padding:10px;
+	
+	
+}
+	
+	.buttons{
+	margin-top:100px;
+	padding:20px; 
+}
+.bg-image{
+	  background-image: url("imgs/book.jpeg");
+ height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #53c68c;
+
+}
+.card{
+	padding: 30px;
+	background-color: #595959;
+	
+}
+.bg-custom{
+	background-color: #595959;
+}
+.card-body{
+	background-color: #595959;
+}
+
+.search-bar{
+	margin:100px;
+}
+.bookdisplay{
+	margin-left:15px;
+
+	text-align:left;
+}

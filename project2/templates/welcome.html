@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+   <b>Book Reviews</b>
+{% endblock %}
+
+{% block body %}
+<div class = "bg-image">
+	
+<h1>Welcome {{email}}</h1>
+	<a href="{{ url_for('logout') }}" button type="button" class="btn btn-info btn-lg"> Logout </a>
+<div class="search-bar">
+	<form action="{{ url_for('displaybooks') }}" method="post">
+          <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4" style = "margin:10px">
+            <div class="input-group">
+              <input name = "search" type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+</form>
+</div>
+</div>
+{% endblock %}
